@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            background-color:brown;
+        }
+      .main{
+        background-color:darkred;
+        /* text-align: center; */
+        margin-top: 100px;
+        color: white;
+        padding-top: 25px;
+        font-family: sans-serif;
+      }
+      textarea{
+        margin-left: 50px;
+      }
+      input{
+        margin-left: 40px;
+      }
+      select{
+        margin-left: 50px;
+      }
+      button{
+        width: 150px;
+        color: white;
+        background-color:burlywood;
+        cursor: pointer;
+        height: 30px;
+      }
+      button:hover{
+        background-color: chartreuse;
+      }
+     
+    </style>
+</head>
+<body>
+    <div class="main">
+       <form>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput">
+        <br><br>
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput">
+        <br><br>
+        <label for="passwordInput">Password:</label>
+        <input type="password" id="passwrodInput">
+        <br><br>
+        <label for="phoneInput">Phonenumber:</label>
+        <input type="number" id="phoneInput">
+        <br><br>
+        <label for="genderInput">Gender:</label>
+        <input type="radio" id="genderInput">Male
+        <input type="radio" id="genderInput">Female
+        <input type="radio" id="genderInput">Others
+        <br><br>
+        <label for="langugeInput">Language:</label>
+        <select name="device" id="languageInput">
+            <option value="computer">English</option>
+            <option value="computer">Urdu</option>
+            <option value="computer">Chinese</option>
+            <option value="computer">Sindhi</option>
+            <option value="computer">German</option>
+            <option value="computer">Punjabi</option>
+        </select>
+        <br><br>
+        <label for="zipInput">zipcode:</label>
+        <input type="number" id="zipInput">
+        <br><br>
+        <label for="commentInput">About:</label>
+        <textarea  id="commentInput" placeholder="write about yourself"></textarea>
+        <br><br>
+        <label for="submitInput"></label>
+        <button type="submit">Register</button>
+       </form>
+    </div>
+</body>
+</html>
